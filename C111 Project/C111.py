@@ -48,7 +48,7 @@ print("std1",first_std_deviation_start, first_std_deviation_end)
 print("std2",second_std_deviation_start, second_std_deviation_end)
 print("std3",third_std_deviation_start,third_std_deviation_end)
 
-fig = ff.create_distplot([mean_list], ["student marks"], show_hist=False)
+fig = ff.create_distplot([mean_list], ["id"], show_hist=False)
 fig.add_trace(go.Scatter(x=[mean, mean], y=[0, 0.17], mode="lines", name="MEAN"))
 fig.add_trace(go.Scatter(x=[first_std_deviation_start, first_std_deviation_start], y=[0, 0.17], mode="lines", name="STANDARD DEVIATION 1 START"))
 fig.add_trace(go.Scatter(x=[first_std_deviation_end, first_std_deviation_end], y=[0, 0.17], mode="lines", name="STANDARD DEVIATION 1 END"))
